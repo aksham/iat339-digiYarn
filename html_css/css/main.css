@@ -1,8 +1,8 @@
 body {
   font-family: 'Lato', sans-serif;
   padding: 2rem;
-  background-color: rgba(30, 35, 35, 1.0);
-  color: rgba(255, 255, 255, 1.0);
+  background-color: rgba(255, 255, 254, 1.0);
+  color: rgba(30, 35, 35, 1.0);
   width: auto;
   padding: 0 16%;
 }
@@ -45,14 +45,14 @@ section h1 b, section h2 b, section h3 b {
 
 section code {
   display: inline-block;
-  background-color: rgba(20, 25, 25, 1.0);
+  background-color: rgba(230, 230, 230, 1.0);
   padding: 0.5em 0.75em;
 }
 
 /* Links */
 
 section a {
-  color: rgba(255, 32, 113, 1.0);
+  color: rgba(255, 110, 0, 1.0);
 }
 
 section a:hover, nav ul li a:hover {
@@ -81,12 +81,12 @@ a.btn {
 }
 
 a.submit {
-  background-color: rgba(45, 160, 255, 1.0);
+  background-color: rgba(50, 169, 247, 1.0);
 }
 
 a.submit:hover, a.submit2:hover {
   color: rgba(30, 35, 35, 1.0);
-  background-color: rgba(255, 255, 255, 1.0);
+  background-color: rgba(206, 206, 206, 1.0);
 }
 
 a.cancel {
@@ -95,7 +95,7 @@ a.cancel {
 }
 
 a.cancel:hover {
-  color: rgba(255, 255, 255, 1.0);
+  color: rgba(0, 0, 0, 1.0);
 }
 
 a.submit2 {
@@ -107,7 +107,7 @@ a.remove {
 }
 
 a.remove:hover {
-  background-color: rgba(255, 255, 255, 1.0);
+  background-color: rgba(0, 0, 0, 1.0);
   color: rgba(200, 40, 40, 1.0);
 }
 
@@ -116,7 +116,7 @@ a.remove:hover {
 nav ul {
   list-style: none;
   padding: 1.0rem;
-  background-color: rgba(20, 25, 25, 1.0);
+  background-color: rgba(30, 35, 35, 1.0);
   border-radius: 1.0em;
 }
 
@@ -153,19 +153,20 @@ nav ul {
 }
 
 #navbar a:hover {
-  color: rgba(255, 32, 133, 1.0);
-  border-bottom: 0.4rem solid rgba(255, 32, 133, 1.0);
+  color: rgba(255, 110, 0, 1.0);
+  border-bottom: 0.4rem solid rgba(255, 110, 0, 1.0);
   transition: border 0.2s ease-in-out;
 
 }
 
 nav ul li a {
-  color: rgba(255, 32, 113, 1.0);
+  color: rgba(255, 110, 0, 1.0);
   text-decoration: none;
 }
 
 /* Color blocks */
 .colorblock {
+  color: rgb(255, 255, 255);
   display: inline-block;
   border-radius: 1.0rem;
   width: 12.0rem;
@@ -173,11 +174,10 @@ nav ul li a {
   padding: 2.0rem;
   margin: 1.0rem;
   text-align: center;
-  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .colorblock:hover {
-  border-color: rgba(255, 255, 255, 1.0);
+  border-color: rgba(0, 0, 0, 1.0);
   transition: border 0.4s ease-in-out;
 }
 
@@ -190,28 +190,27 @@ nav ul li a {
 }
 
 .colordark {
-  background-color: rgba(20, 25, 25, 1.0);
+  background-color: rgba(30, 35, 35, 1.0);
 }
 
 .colorwhite {
-  background-color: rgba(255, 255, 255, 1.0);
-  color: rgba(30, 35, 35, 1.0);
+  background-color: rgba(0, 0, 0, 1.0);
 }
 
 .colorsub {
   background-color: rgba(135, 135, 135, 1.0);
 }
 
-.colorpink {
-  background-color: rgba(255, 32, 113, 1.0);
+.colororange {
+  background-color: rgba(255, 110, 0, 1.0);
 }
 
 .colorblue {
-  background-color: rgba(45, 160, 255, 1.0);
+  background-color: rgba(50, 169, 247, 1.0);
 }
 
 .colorgreen {
-  background-color: rgba(27, 237, 168, 1.0);
+  background-color: rgba(70, 219, 84, 1.0);
 }
 
 /* Forms */
