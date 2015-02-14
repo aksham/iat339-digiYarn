@@ -1,9 +1,12 @@
 body {
   font-family: 'Lato', sans-serif;
-  padding: 2rem;
   background-color: rgba(255, 255, 254, 1.0);
   color: rgba(30, 35, 35, 1.0);
-  width: auto;
+  padding: 0;
+  margin: auto;
+}
+
+#content {
   padding: 0 16%;
 }
 
@@ -16,6 +19,7 @@ p.Oswald-pre {
 }
 
 ul {
+  list-style: none;
   text-decoration: none;
 }
 
@@ -113,39 +117,49 @@ a.remove:hover {
 
 /* Navigation */
 
-nav ul {
-  list-style: none;
-  padding: 1.0rem;
-  background-color: rgba(48, 48, 48, 1.0);
+#topnav {
+  background-color: rgba(40, 40, 40, 1.0);
+  width: auto;
+  margin: -1% 0rem;
+  padding: 0.3rem 0rem 0 0rem;
+}
+
+#topnav ul {
   border-radius: 1.0em;
+  padding-bottom: -2rem;
+  line-height: 0.5rem;
 }
 
 #guide-nav ul {
   display: inline-block;
+  margin: auto;
 }
 
 #navbar {
   text-align: justify;
+  padding: 0;
 }
 
-#navbar:before, #navbar:after {
-  content:'';
+ #navbar:after {
+  content: '';
   width: 100%;
-}
-#navbar:before {
-  display: block;
-}
-
-#navbar:after {
   display: inline-block; 
 }
 
 #navbar li {
   display: inline-block;
   font-family: 'Oswald', sans-serif;
-  font-size: 2.0rem;
+  font-size: 1.4rem;
   position: relative;
-  padding: 1.0rem 3.0rem;
+  padding: 1.0rem;
+}
+
+#navbar li:first-child {
+  padding-left: 16%;
+}
+
+#navbar li:last-child {
+  padding-right: 16%;
 }
 
 #navbar a {
@@ -174,10 +188,11 @@ nav ul li a {
   padding: 2.0rem;
   margin: 1.0rem;
   text-align: center;
+    border: 1px solid rgba(30, 35, 35, 0.4);
 }
 
 .colorblock:hover {
-  border-color: rgba(0, 0, 0, 1.0);
+  border-color: rgba(30, 35, 35, 1.0);
   transition: border 0.4s ease-in-out;
 }
 
@@ -186,7 +201,8 @@ nav ul li a {
 }
 
 .colorgrey {
-  background-color: rgba(30, 35, 35, 1.0);
+  background-color: rgba(255, 255, 254, 1.0);
+  color: rgba(30, 35, 35, 1.0);
 }
 
 .colordark {
@@ -210,7 +226,7 @@ nav ul li a {
 }
 
 .colorgreen {
-  background-color: rgba(76, 216, 90, 1.0);
+  background-color: rgba(100, 200, 40, 1.0);
 }
 
 /* Forms */

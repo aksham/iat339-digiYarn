@@ -8,7 +8,7 @@
   <link href='http://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
-  <nav>
+  <nav id ="topnav">
     <ul id="navbar">
       <li><a class="nav" href="#">HOME</a></li>
       <li><a class="nav" href="#">NEWS</a></li>
@@ -16,14 +16,15 @@
       <li><a class="nav" href="#">STORE</a></li>
       <li><a class="nav" href="#">ABOUT</a></li>
     </ul>
-  </nav>    
+  </nav>
+  <section id="content">    
   <h1>Digital Yarn Style Guide</h1>
   <section id="top">
     <h1>About</h1>
     <p>Digital Yarn is a mobile and PC indie game developer. They plan to use their site not only as a showcase of games they've created, but also to convert it into a platform to promote and sell games and related merchandise. While the website will mostly have graphics and images as its main visual elements in order to showcase the games, underneath those images, this is what it'll look like.</p>
   </section>
   <section>
-    <h2>Navigation:</h2>
+    <h2>Navigation: <b>Jump to a section in the style guide</b></h2>
     <nav id="guide-nav">
       <ul>
         <li><a href="#basetext">Base text</a></li>
@@ -41,12 +42,16 @@
     <a href="#top">To top</a>
     <h2>Default Text Style <b>Headers, body text, links</b></h2>
     <h3>Fonts:</h3>
-    <p>Main/Body: Lato</p>
-    <p class="Oswald-pre">Branding/Nav Menu: Oswald</p>
+    <ul>
+      <li><p>Main/Body: Lato</p></li>
+      <li><p class="Oswald-pre">Branding/Nav Menu: Oswald</p></li>
+    </ul>
     <h3>Examples:</h3>
-    <h1>Header 1 <b>Header subtext</b></h1>
-    <h2>Header 2 <b>Header subtext</b></h2>
-    <h3>Header 3 <b>Header subtext</b></h3>
+    <ul>
+      <li><h1>Header 1 <b>Header subtext</b></h1></li>
+      <li><h2>Header 2 <b>Header subtext</b></h2></li>
+      <li><h3>Header 3 <b>Header subtext</b></h3></li>
+    </ul>
     <p>Wrap header text with <code>&lt;b&gt;</code> tags to create header subtext.</p>
     <h3>CSS Selectors:</h3>
     <code>
@@ -70,14 +75,13 @@
     <a href="#top">To top</a>
     <h2>Default Top Navigation <b>Links, buttons within the navigation bar should look like this.</b></h2>
     <h3>Example:</h3>
-    <nav>
+    <nav id="topnav">
       <ul id="navbar">
         <li><a class="nav" href="#">HOME</a></li>
         <li><a class="nav" href="#">NEWS</a></li>
         <li><a class="nav" href="#">GAMES</a></li>
         <li><a class="nav" href="#">STORE</a></li>
         <li><a class="nav" href="#">ABOUT</a></li>
-      </ul>
     </nav>
     <h3>CSS Selector:</h3>
     <code>
@@ -85,12 +89,15 @@
     </code>
     <h3>Sample HTML: </h3>
     <code>
+      &lt;nav id="topnav"&gt;<br />
       &lt;ul id="navbar"&gt;<br />
       &lt;li&gt;&lt;a class="nav" href="#"&gt;HOME&lt;/a&gt;&lt;/li&gt;<br />
+      &lt;li&gt;&lt;a class="nav" href="#"&gt;NEWS&lt;/a&gt;&lt;/li&gt;<br />      
       &lt;li&gt;&lt;a class="nav" href="#"&gt;GAMES&lt;/a&gt;&lt;/li&gt;<br />
       &lt;li&gt;&lt;a class="nav" href="#"&gt;STORE&lt;/a&gt;&lt;/li&gt;<br />
       &lt;li&gt;&lt;a class="nav" href="#"&gt;ABOUT&lt;/a&gt;&lt;/li&gt;<br />
       &lt;/ul&gt;<br />
+      &lt;/nav&gt;
     </code>
     <a class=""></a>
 
@@ -237,5 +244,6 @@
       <code>img { border: none; }</code>
       <h3>Sample HTML:</h3>
       <code>&lt;a href="#images"&gt;&lt;img src="img/cat_with_yarn.jpg"&gt;&lt;/a&gt;</code>
+      </section>
     </body>
     </html>
