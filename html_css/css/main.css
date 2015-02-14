@@ -60,9 +60,8 @@ section a {
 }
 
 section a:hover, nav ul li a:hover {
-  color: white;
+  color: rgba(30, 35, 35, 1.0);
   transition: color 0.2s ease-in-out;
-
 }
 
 /* buttons */
