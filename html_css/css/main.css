@@ -125,8 +125,8 @@ a.remove:hover {
 #topnav {
   background-color: rgba(60, 60, 60, 1.0);
   width: auto;
-  margin: -1% 0rem;
-  padding: 0.3rem 0rem 0 0rem;
+  margin: -1% 0 0 0;
+  padding: 0.3rem 0 0 0;
 }
 
 #topnav ul {
