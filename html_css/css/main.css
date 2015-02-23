@@ -18,6 +18,14 @@
     display: inline-block;
     padding: 0.4rem;
   }
+
+  .grid-col {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 560px) {
+
 }
 
 *, *:after, *:before {
@@ -45,7 +53,9 @@ body {
 }
 
 img {
-  border: none;
+  width: auto;
+  height: auto;
+  max-width: 100%;
 }
 
 p.Oswald-pre {
@@ -92,10 +102,18 @@ section code {
   padding: 0.5em 0.75em;
 }
 
-[id^='feature-'].desc p {
+.grid-col {
   padding: 1.0rem;
   display: inline-block;
   width: 50%;
+  float: left;
+  border: 1px solid #ff0000;
+}
+
+[class^=-grid-] {
+  clear: both;
+  display:block;
+  content:".";
 }
 
 /* Links */
@@ -160,10 +178,6 @@ a.remove:hover {
 }
 
 /* Navigation */
-header {
-   /*background-color: black; remove this after */
-}
-
 #topnav {
   margin: 0;
   padding: 0 12%;
