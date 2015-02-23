@@ -138,7 +138,6 @@ header {
   }
 
 #topnav ul {
-  padding: 1.0rem 0;
   text-align: center;
 }
 
@@ -146,21 +145,19 @@ header {
   display: inline-block;
   font-family: 'Oswald', sans-serif;
   font-size: 1.4rem;
-  width: auto;
+  width: 15%;
+  padding: 1.0rem;
 }
 
-#topnav ul li.spacer {
-  margin: 0 6.0rem;
+
+#topnav ul li.nav-left {
+margin-left: 0;
+/*text-align: left;*/
 }
 
-#topnav ul li:first-child {
-  padding-left: 0;
-  text-align: left;
-}
-
-#topnav ul li:last-child {
-  padding-right: 0;
-  text-align: right;
+#topnav ul li.nav-right {
+  margin: right: 0;
+/*text-align: right;*/
 }
 
 #guide-nav ul {
@@ -168,17 +165,6 @@ header {
   margin: auto;
   width: auto;
 }
-
-/*#navbar:after {
-  content: ".";
-  width: 100%;
-  display: inline-block;
-box-sizing: border-box;
-  background-color: transparent;
-  margin: 0;
-  padding: 0;
-
-}*/
 
 #navbar a {
   color: rgba(255, 255, 255, 1.0);
