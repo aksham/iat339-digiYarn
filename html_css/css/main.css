@@ -83,10 +83,13 @@ section code {
 }
 
 [class^=grid-col-] {
-  padding: 1.0rem;
   display: inline-block;
-  border: 1px solid #ff0000;
   float:left;
+}
+
+[class^=grid-col-] p {
+  padding: 0 1.0rem;
+  margin: 0;
 }
 
 .grid-50:after, .grid-25:after {
