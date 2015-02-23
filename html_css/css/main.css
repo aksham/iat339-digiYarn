@@ -323,8 +323,9 @@ input.form-search {
 }
 
 @media screen and (max-width: 910px) {
-  #content {
-    padding: 0 10%;
+  #content, #topnav, header img {
+    padding: 0;
+    margin: 0;
   }
 
   @media screen and (max-width: 1180) {
