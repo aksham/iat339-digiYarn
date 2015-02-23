@@ -213,9 +213,10 @@ nav ul li a {
 }
 
 #footer .meta li {
+  font-size: 0.7rem;
   display: inline-block;
-  padding: 0 1.2rem;
-  float:left;
+  padding: 0 1.2%;
+  float: left;
 }
 
 /* Color blocks */
@@ -288,13 +289,13 @@ input.form-search {
   padding: 0.5rem 3.0rem 0.5rem 0.8rem;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
   body {
     font-size: 0.8rem;
   }
 
   #topnav {
-    padding: 0rem 0rem !important;
+    padding-left: 0
   }
 
   #topnav .nav-item a{
@@ -303,10 +304,14 @@ input.form-search {
     line-height: 0.8rem;
   }
 
+  #content {
+    padding: 0;
+  }
+
   #footer .meta li {
     text-align: justify;
     display: inline-block;
-    padding: 0.4rem;
+    padding: 0 0.4rem;
   }
 
   .grid-col-25, .grid-col-50 {
@@ -315,6 +320,14 @@ input.form-search {
   }
 }
 
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 910px) {
+  #content {
+    padding: 0 10%;
+  }
 
+  @media screen and (max-width: 1180) {
+    #content {
+      padding: 20%;
+    }
+  }
 }
