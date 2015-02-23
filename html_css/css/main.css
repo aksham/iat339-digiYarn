@@ -310,6 +310,10 @@ input.form-search {
     padding: 0;
   }
 
+  #game-content .grid-50 img{
+    padding: 0 15%;
+  }
+
   #footer .meta li {
     text-align: justify;
     display: inline-block;
@@ -336,5 +340,5 @@ input.form-search {
 }
 
 .banner {
-  width: 50%;
+  width: 70%;
 }
