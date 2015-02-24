@@ -24,6 +24,22 @@ header img {
   border: 0;
 }
 
+#game-content {
+    padding: 0 15%;
+    border: 0;
+    text-align: center;
+    margin-top: 2em;
+  }
+
+#game-content p {
+  margin: 0;
+}
+
+.banner {
+  width: 60%;
+  margin-top: 2em;
+}
+
 img {
   width: auto;
   height: auto;
@@ -323,10 +339,6 @@ input.form-search {
     padding: 0;
   }
 
-  #game-content .grid-50 img{
-    padding: 0 15%;
-  }
-
   #footer .meta li {
     text-align: justify;
     display: inline-block;
@@ -350,8 +362,4 @@ input.form-search {
       padding: 20%;
     }
   }
-}
-
-.banner {
-  width: 70%;
 }
