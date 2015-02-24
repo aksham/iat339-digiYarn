@@ -15,6 +15,15 @@ body {
   line-height: 1.5rem;
 }
 
+.products figcaption {
+  text-align: center;
+}
+
+.products figure{
+  display: inline-block;
+  margin: 1.0rem;
+}
+
 header img {
   padding: 0 15%;
 }
@@ -351,7 +360,7 @@ input.form-search {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   #content, #topnav, header img {
     padding: 0;
     margin: 0;
@@ -359,7 +368,8 @@ input.form-search {
 
   @media screen and (max-width: 1180) {
     #content {
-      padding: 20%;
+      padding: 5%;
+      margin: 0;
     }
   }
 }
