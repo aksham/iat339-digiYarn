@@ -351,7 +351,7 @@ input.form-search {
   }
 }
 
-@media screen and (max-width: 910px) {
+@media screen and (max-width: 600px) {
   #content, #topnav, header img {
     padding: 0;
     margin: 0;
