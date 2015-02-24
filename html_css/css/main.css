@@ -74,12 +74,25 @@ section code {
   padding: 0.5em 0.75em;
 }
 
-.grid-col-50 {
-  width: 50%;
+/* Using a 5 column grid */
+.grid-col-1 {
+  width: 20%;
 }
 
-.grid-col-25 {
-  width: 25%;
+.grid-col-2 {
+  width: 40%;
+}
+
+.grid-col-3 {
+  width: 60%;
+}
+
+.grid-col-4 {
+  width: 80%;
+}
+
+.grid-col-5 {
+  width: 100%;
 }
 
 [class^=grid-col-] {
@@ -320,7 +333,7 @@ input.form-search {
     padding: 0 0.4rem;
   }
 
-  .grid-col-25, .grid-col-50 {
+  [class^=grid-col-] {
     display:block;
     width: 100%;
   }
