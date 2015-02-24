@@ -74,7 +74,7 @@ section h1 {
   font-weight: bold;
   font-family: "Oswald";
   font-size: 1.8rem;
-  margin: 0.5rem 0;
+  margin: 1em 0;
 }
 
 section h2 {
@@ -97,6 +97,11 @@ section code {
   display: inline-block;
   background-color: rgba(230, 230, 230, 1.0);
   padding: 0.5em 0.75em;
+}
+
+b.archive a{
+  float:right;
+  font-size: 120%;
 }
 
 /* Using a 5 column grid */
