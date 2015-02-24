@@ -264,6 +264,10 @@ nav ul li a {
   float: left;
 }
 
+.merch-nav {
+  /*  background-color: rgba(135, 135, 135, 1.0);*/
+}
+
 /* Color blocks */
 .colorblock {
   color: rgb(255, 255, 255);
