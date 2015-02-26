@@ -347,14 +347,19 @@ input.form-search {
     padding-left: 0
   }
 
-  #topnav .nav-item a{
+  #topnav .nav-item {
     font-size: 1.0rem;
     width: 100%;
     line-height: 0.8rem;
   }
 
-  #content {
+  #content, #game-content {
     padding: 0;
+    margin: 0;
+  }
+
+  #content img {
+    width: auto;
   }
 
   #footer .meta li {
@@ -367,6 +372,11 @@ input.form-search {
     display:block;
     width: 100%;
   }
+
+  #game-content .grid-50 {
+  margin: 0;
+  padding: 0;
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -374,11 +384,20 @@ input.form-search {
     padding: 0;
     margin: 0;
   }
+}
 
-  @media screen and (max-width: 1180) {
-    #content {
-      padding: 5%;
-      margin: 0;
-    }
+@media screen and (max-width: 1180) {
+  #content {
+    padding: 5%;
+    margin: 0;
+  }
+@media screen and (max-width: 1920) {
+  #content {
+    padding: 15%;
+    margin: 0;
+  }
+
+  #topnav {
+    margin: 0 25%;
   }
 }
