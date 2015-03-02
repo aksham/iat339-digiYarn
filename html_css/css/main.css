@@ -222,12 +222,16 @@ a.remove:hover {
 #cartnav {
   text-align: right;
   margin-top: 0.5rem;
-  padding: 0 0.5rem;
 }
 
 #cartnav .nav-item {
   display: inline-block;
-  padding: 0 0.2rem;
+  padding: 0 0.3rem;
+}
+
+#cartnav .navitem img {
+  width: auto;
+  height: auto;
 }
 
 #footer ul {
@@ -387,7 +391,7 @@ input.form-search {
 }
 
 @media screen and (max-width: 800px) {
-  #content, #topnav, header img {
+  #content, #topnav, #cartnav, header img {
     padding: 0;
     margin: 0;
   }
@@ -398,13 +402,14 @@ input.form-search {
     padding: 5%;
     margin: 0;
   }
+
 @media screen and (max-width: 1920) {
   #content {
     padding: 15%;
     margin: 0;
   }
 
-  #topnav {
+  #topnav, #cartnav {
     margin: 0 25%;
   }
 }
