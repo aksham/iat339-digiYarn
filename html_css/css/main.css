@@ -271,6 +271,10 @@ a.remove:hover {
   width: auto;
 }
 
+#topnav div.selected a {
+  color: rgb(255,110,0);
+} 
+
 #topnav a, #cartnav a, #cartnav .nav-item {
   color: rgba(255, 255, 255, 1.0);
   transition: color 0.2s ease-in-out;
