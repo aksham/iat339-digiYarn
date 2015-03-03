@@ -2,22 +2,29 @@
 <html>
 <head>
   <meta charset="utf-8">
+
   <title>Digital Yarn Style Guide</title>
   <link href="css/main.css" rel="stylesheet">
   <link href='http://fonts.googleapis.com/css?family=Lato:400,900' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
 </head>
-<body>
+
+<header>
+  <div id="banner">
+    <img src="img/banners/nav/about_banner.jpg">
+  </div>
+
   <nav id ="topnav">
-    <ul id="navbar">
-      <li><a class="nav" href="#basetext">TEXT</a></li>
-      <li><a class="nav" href="#navigation-bar">MENU</a></li>
-      <li><a class="nav" href="#colors">COLORS</a></li>
-      <li><a class="nav" href="#forms">FORMS</a></li>
-      <li><a class="nav" href="#buttons">BUTTONS</a></li>
-      <li><a class="nav" href="#images">IMAGES</a></li>
-    </ul>
+    <div class="nav-item" style="width: 13%;"><a href="#basetext">TEXT</a></div>
+    <div class="nav-item" style="width: 13%;"><a href="#navigation-bar">MENU</a></div>
+    <div class="nav-item" style="width: 13%;"><a href="#colors">COLORS</a></div>
+    <div class="nav-item" style="width: 13%;"><a href="#forms">FORMS</a></div>
+    <div class="nav-item" style="width: 13%;"><a href="#buttons">BUTTONS</a></div>
+    <div class="nav-item" style="width: 13%;"><a href="#images">IMAGES</a></div>
   </nav>
+</header>
+
+<body>
   <section id="content">    
   <h1>Digital Yarn Style Guide</h1>
   <section id="top">
@@ -63,29 +70,30 @@
     <a href="#top">To top</a>
     <h2>Default Top Navigation <b>Links, buttons within the navigation bar should look like this.</b></h2>
     <h3>Example:</h3>
-    <nav id="topnav">
-      <ul id="navbar">
-        <li><a class="nav" href="#">HOME</a></li>
-        <li><a class="nav" href="#">NEWS</a></li>
-        <li><a class="nav" href="#">GAMES</a></li>
-        <li><a class="nav" href="#">STORE</a></li>
-        <li><a class="nav" href="#">ABOUT</a></li>
-    </nav>
+<header>
+  <nav id ="topnav">
+    <div class="nav-item"><a href="#">HOME</a></div>
+    <div class="nav-item"><a href="#">NEWS</a></div>
+    <div class="nav-item"><a href="#">GAMES</a></div>
+    <div class="nav-item"><a href="#">MERCH</a></div>
+    <div class="nav-item"><a href="#">ABOUT</a></div>
+  </nav>
+</header>
     <h3>CSS Selector:</h3>
     <code>
       #navbar
     </code>
     <h3>Sample HTML: </h3>
     <code>
+      &lt;header&gt;<br />
       &lt;nav id="topnav"&gt;<br />
-      &lt;ul id="navbar"&gt;<br />
-      &lt;li&gt;&lt;a class="nav" href="#"&gt;HOME&lt;/a&gt;&lt;/li&gt;<br />
-      &lt;li&gt;&lt;a class="nav" href="#"&gt;NEWS&lt;/a&gt;&lt;/li&gt;<br />      
-      &lt;li&gt;&lt;a class="nav" href="#"&gt;GAMES&lt;/a&gt;&lt;/li&gt;<br />
-      &lt;li&gt;&lt;a class="nav" href="#"&gt;STORE&lt;/a&gt;&lt;/li&gt;<br />
-      &lt;li&gt;&lt;a class="nav" href="#"&gt;ABOUT&lt;/a&gt;&lt;/li&gt;<br />
-      &lt;/ul&gt;<br />
+      &lt;div class="nav-item"&gt;&lt;a href="#"&gt;HOME&lt;/a&gt;&lt;/div&gt;<br />
+      &lt;div class="nav-item"&gt;&lt;a href="#"&gt;NEWS&lt;/a&gt;&lt;/div&gt;<br />      
+      &lt;div class="nav-item"&gt;&lt;a href="#"&gt;GAMES&lt;/a&gt;&lt;/div&gt;<br />
+      &lt;div class="nav-item"&gt;&lt;a href="#"&gt;MERCH&lt;/a&gt;&lt;/div&gt;<br />
+      &lt;div class="nav-item"&gt;&lt;a href="#"&gt;ABOUT&lt;/a&gt;&lt;/div&gt;<br />
       &lt;/nav&gt;
+      &lt;/header&gt;      
     </code>
     <a class=""></a>
 
