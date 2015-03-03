@@ -28,6 +28,12 @@ header img {
   padding: 0 15%;
 }
 
+#banner {
+  padding: 0;
+  margin: 0;
+  line-height: 0;
+}
+
 #content {
   padding: 0 15%;
   border: 0;
@@ -42,11 +48,6 @@ header img {
 
 #game-content p {
   margin: 0;
-}
-
-.banner {
-  width: 60%;
-  margin-top: 2em;
 }
 
 img {
