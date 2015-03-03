@@ -29,8 +29,6 @@ header img {
 }
 
 #banner {
-  padding: 0;
-  margin: 0;
   line-height: 0;
 }
 
@@ -48,6 +46,12 @@ header img {
 
 #game-content p {
   margin: 0;
+}
+
+.banner {
+  width: 60%;
+  margin-top: 2em;
+  line-height: 0;
 }
 
 img {
@@ -249,7 +253,6 @@ a.remove:hover {
   font-size: 1.4rem;
   width: 18%;
   padding: 1.0rem 0;
-  background-color: rgba(60, 60, 60, 1.0);
 }
 
 #topnav .nav-item:hover, #cartnav .nav-item:hover {
