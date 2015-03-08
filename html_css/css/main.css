@@ -417,7 +417,7 @@ input.form-search {
 }
 
 @media screen and (max-width: 500px) {
-#stylenav, #topnav, #cartnav, header img {
+#stylenav #topnav, #topnav, #cartnav, header img {
     padding: 0;
     margin: 0;
   }
@@ -429,6 +429,10 @@ input.form-search {
   #stylenav #topnav .nav-item {
     width: 18%;
   }
+}
+
+@media screen and (max-width: 800px) {
+
 }
 
 /*@media screen and (max-width: 1180px) {
