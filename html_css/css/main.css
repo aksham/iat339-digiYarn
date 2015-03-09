@@ -397,7 +397,7 @@ input.form-search {
 [class^=grid-col-] figure figcaption {
   color: rgba(255, 255, 255, 1.0);
   background-color: rgba(35, 35, 35, 1.0);
-  padding: 0.6rem;
+  padding: 0.2rem;
 }
 
 [class^=grid-col-] figure figcaption a{
@@ -417,11 +417,17 @@ input.form-search {
     padding-left: 4.0rem;
   }
 
+/*checkout cart*/
+
 /* index-layout:re */
 
 .grid-50 .featured-item {
   background-color: rgba(235, 235, 235, 1.0);
   padding: 1.0rem;
+}
+
+.h2p {
+  padding: 0 0 0 3.0rem;
 }
 
 /*============================================================*/
