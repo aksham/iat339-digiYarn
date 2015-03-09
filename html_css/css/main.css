@@ -378,6 +378,33 @@ input.form-search {
 }
 
 
+/* merch test */
+
+[class^=grid-col-] figure{
+  background-color: rgba(255, 255, 255, 1.0);
+  text-align: center;
+}
+
+[class^=grid-col-] figure figcaption {
+  color: rgba(255, 255, 255, 1.0);
+  background-color: rgba(35, 35, 35, 1.0);
+  padding: 0.6rem;
+}
+
+[class^=grid-col-] figure figcaption a{
+    color: rgba(255, 255, 255, 1.0);
+    text-decoration: none;
+}
+
+[class^=grid-col-] figure figcaption a:hover{
+    color: rgba(255, 110, 0, 1.0);
+}
+
+  .grid-50 .products {
+    background-color: rgba(235, 235, 235, 1.0);
+  }
+
+
 /*============================================================*/
 /*Responsive adjustments*/
 
