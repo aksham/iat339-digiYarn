@@ -33,7 +33,7 @@ header img {
 }
 
 #content {
-  padding: 0 20%;
+  margin: 0 20%;
   border: 0;
 }
 
@@ -219,14 +219,14 @@ a.remove:hover {
 }
 
 #cartnav {
-  margin: 0 15%;
+  margin: 0 20%;
   padding: 0;
   background-color: rgba(140, 140, 140, 1.0);
 }
 
 #footer {
   margin: 0;
-  padding: 0 15%;
+  padding: 0 20%;
   width: 100%;
 }
 
@@ -250,7 +250,9 @@ a.remove:hover {
 }
 
 #footer ul {
-  text-align: right;
+  text-align: left;
+  margin: 0;
+  padding: 0;
 }
 
 #topnav .nav-item {
@@ -301,7 +303,7 @@ nav ul li a {
 #footer .meta li {
   font-size: 0.7rem;
   display: inline-block;
-  padding: 0 1.2%;
+  padding: 0 1.0rem;
   float: left;
 }
 
@@ -375,7 +377,12 @@ input.form-search {
   padding: 0.5rem 3.0rem 0.5rem 0.8rem;
 }
 
-@media screen and (max-width: 600px) {
+
+/*============================================================*/
+/*Responsive adjustments*/
+
+@media screen and (max-width: 489px) {
+
   body {
     font-size: 0.8rem;
   }
@@ -391,8 +398,8 @@ input.form-search {
   }
 
   #content, #game-content {
-    padding: 0;
-    margin: 0;
+    padding: 0 5%;
+    margin: 0 5%;
   }
 
   #content img {
@@ -400,9 +407,14 @@ input.form-search {
   }
 
   #footer .meta li {
-    text-align: justify;
+    text-align: left;
     display: inline-block;
-    padding: 0 0.4rem;
+    padding: 0 5%;
+  }
+
+  #footer ul, #footer{
+    margin: 0;
+    padding: 0;
   }
 
   [class^=grid-col-] {
@@ -416,14 +428,16 @@ input.form-search {
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
 #stylenav #topnav, #topnav, #cartnav, header img {
     padding: 0;
     margin: 0;
   }
 
   #content {
-    margin: 0 5%;
+    margin: 0;
+    padding: 0 7%;
+
   }
 
   #stylenav #topnav .nav-item {
@@ -432,22 +446,77 @@ input.form-search {
 }
 
 @media screen and (max-width: 800px) {
-
-}
-
-/*@media screen and (max-width: 1180px) {
   #content {
-    padding: 5%;
     margin: 0;
+    padding: 0 9%;
+  }
+
+  #stylenav #topnav, #topnav, #cartnav, header img {
+    padding: 0;
+    margin: 0;
+  }
+
 }
 
-@media screen and (max-width: 1800px) {
+@media screen and (max-width: 1180px) {
   #content {
+    padding: 0 5%;
+    margin: 0;
+  }
+  #stylenav #topnav, #topnav, #cartnav, header img {
     padding: 0;
-    margin: 0 15%;
+    margin: 0;
+  }
+}
+
+/*@media screen and (min-width: 1440px) {
+  #content {
+    padding: 0 5%;
+    margin: 0;
   }
 
   #stylenav, #topnav, #cartnav {
-    margin: 0 15%;
-  }*/
+    margin: 0 5%;
+  }
+}*/
+
+@media screen and (min-width: 2500px) {
+  section h1 {
+    font-size: 3.0rem;
+  }
+
+  section h2 {
+    font-size: 2.6rem;
+  }
+
+  section h3 {
+    font-size: 2.2rem;
+  }
+
+
+  #content {
+    padding: 0 10% 0 35%;
+    margin: -19% 0 0 0;
+    font-size: 2.0rem;
+    line-height: 3.2rem;
+  }
+
+  #stylenav #topnav, #topnav, #cartnav, header img {
+    padding: 0;
+    width: 30%;
+    margin: 0;
+  }
+
+  #topnav .nav-item {
+    padding: 1.0rem 0;
+    margin: 0;
+    width: 100%;
+    font-size: 2.8rem;
+    line-height: 4.0rem;
+  }
+
+  #cartnav {
+    padding: 1.0rem 1.0rem 1.0rem 0;
+    font-size: 1.4rem;
+  }
 }
