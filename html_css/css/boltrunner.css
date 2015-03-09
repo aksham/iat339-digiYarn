@@ -29,3 +29,7 @@ section h1 {
 .grid-50 {
 	padding-bottom: 7.0rem;
 }
+
+.grid-50 figure {
+	background: transparent;
+}
