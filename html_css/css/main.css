@@ -109,6 +109,7 @@ section h1 b, section h2 b, section h3 b {
   font-size: 1.0rem;
   font-weight: normal;
   color: rgba(135, 135, 135, 1.0);
+  margin-left: 1.0rem;
 }
 
 section code {
