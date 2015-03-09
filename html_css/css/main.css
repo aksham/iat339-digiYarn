@@ -413,6 +413,10 @@ input.form-search {
     background-color: rgba(235, 235, 235, 1.0);
   }
 
+  .product-desc {
+    padding-left: 4.0rem;
+  }
+
 /* index-layout:re */
 
 .grid-50 .featured-item {
