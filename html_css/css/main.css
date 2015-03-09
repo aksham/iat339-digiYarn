@@ -46,7 +46,7 @@ header img {
 }
 
 #game-content {
-    padding: 0 15%;
+    padding: 0;
     border: 0;
     text-align: center;
     margin-top: 2em;
@@ -259,7 +259,7 @@ a.remove:hover {
   height: auto;
 }
 
-#footer ul {
+#footer .meta {
   text-align: left;
   margin: 0;
   padding: 0;
@@ -310,7 +310,7 @@ nav ul li a {
   text-decoration: none;
 }
 
-#footer .meta li {
+#footer .meta {
   font-size: 0.7rem;
   display: inline-block;
   padding: 0 1.0rem;
@@ -455,7 +455,7 @@ input.form-search {
     margin: 0 5%;
   }
 
-  #content img {
+  #content img, #game-content img {
     width: auto;
   }
 
@@ -487,10 +487,18 @@ input.form-search {
     margin: 0;
   }
 
-  #content, #content {
+  #content, #game-content {
     margin: 0;
     padding: 0 7%;
+  }
 
+  #game-content .grid-col-3 {
+    width: 100%;
+  }
+
+  #game-content .grid-col-1 {
+    display: none;
+    width: 0%;
   }
 
   #stylenav #topnav .nav-item {
