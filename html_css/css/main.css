@@ -540,7 +540,12 @@ input.form-search {
     line-height: 3.2rem;
   }
 
-  #stylenav #topnav, #topnav, #cartnav, header img {
+  .item-name {
+    font-size: 1.4rem;
+    line-height: 2.0rem;
+  }
+
+  #stylenav #topnav, #topnav, #cartnav, header img, header img.home{
     padding: 0;
     width: 30%;
     margin: 0;
