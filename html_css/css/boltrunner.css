@@ -1,4 +1,18 @@
-#content {
-	background-image: url('img/landing1/bannerbg.png');
+body {
+	background-image: url("http://i.imgur.com/InMHd9p.png");
+	background-color: #2F2937;
 	background-repeat: repeat-x;
+	color: #fff;
+}
+
+#topnav {
+	background: transparent;
+}
+
+#topnav a{
+	color: rgba(136, 147, 149, 0.7);
+}
+
+#topnav div.selected a, #topnav a:hover {
+	color: rgba(255, 255, 255, 1.0);
 }
