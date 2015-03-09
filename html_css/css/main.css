@@ -15,13 +15,6 @@ body {
   line-height: 1.5rem;
 }
 
-.bg-left {
-  float: left;
-  position: absolute;
-  left: 0px;
-  width: 50%;
-  background-image: url("img/left-side.jpg");
-}
 
 .products figcaption {
   text-align: center;
@@ -32,8 +25,12 @@ body {
   margin: 1.0rem;
 }
 
+header img.home{
+  padding: 0 10%;
+}
+
 header img {
-  padding: 0 20%;
+  padding: 0 15%;
 }
 
 #banner {
@@ -41,7 +38,7 @@ header img {
 }
 
 #content {
-  margin: 0 20%;
+  margin: 0 15%;
   border: 0;
 }
 
@@ -222,20 +219,20 @@ a.remove:hover {
 
 /* Navigation */
 #topnav {
-  margin: 0 20%;
+  margin: 0 15%;
   padding: 0;
   background-color: rgba(60, 60, 60, 1.0);
 }
 
 #cartnav {
-  margin: 0 20%;
+  margin: 0 15%;
   padding: 0;
   background-color: rgba(140, 140, 140, 1.0);
 }
 
 #footer {
   margin: 0;
-  padding: 0 20%;
+  padding: 0 15%;
   width: 100%;
 }
 
@@ -409,7 +406,7 @@ input.form-search {
     color: rgba(255, 110, 0, 1.0);
 }
 
-  .grid-50 .products {
+.grid-50 .products {
     background-color: rgba(235, 235, 235, 1.0);
   }
 
@@ -537,7 +534,7 @@ input.form-search {
 
 
   #content {
-    padding: 0 10% 0 35%;
+    padding: 0 15% 0 35%;
     margin: -19% 0 0 0;
     font-size: 2.0rem;
     line-height: 3.2rem;
