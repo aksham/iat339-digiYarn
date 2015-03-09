@@ -1,4 +1,7 @@
-
+/*todo
+checkout
+login/reg tabs
+footer*/
 
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
@@ -473,7 +476,7 @@ input.form-search {
     margin: 0;
   }
 
-  #content {
+  #content, #content {
     margin: 0;
     padding: 0 7%;
 
@@ -533,7 +536,7 @@ input.form-search {
   }
 
 
-  #content {
+  #content, #game-content {
     padding: 0 15% 0 35%;
     margin: -19% 0 0 0;
     font-size: 2.0rem;
