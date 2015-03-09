@@ -1,8 +1,3 @@
-/*todo
-checkout
-login/reg tabs
-footer*/
-
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -265,6 +260,7 @@ a.remove:hover {
   padding: 0 1.0rem;
   float: left;
   width: 20%;
+  text-decoration: none;
 }
 
 #topnav .nav-item {
