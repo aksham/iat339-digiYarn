@@ -69,15 +69,15 @@ ul {
 }
 
 section {
-  margin: 1em 0;
-  padding: 0.5em 0;
+  margin: 0.2rem 0;
+  padding: 0.2rem 0;
 }
 
 section h1 {
   font-weight: bold;
   font-family: "Oswald", sans-serif;
   font-size: 1.8rem;
-  margin: 0 0 1rem 0;
+  margin: 0;
 }
 
 section h2 {
@@ -295,6 +295,16 @@ a.cartnav:hover {
   width: 100%;
   padding: 1.0rem 0;
 }
+
+#stylenav .topnav .nav-item a{
+  display: inline-block;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.4rem;
+  width: 100%;
+  padding: 1.0rem 0;
+}
+
+
 a {
   transition: color 0.3s ease-in-out;
   -moz-transition: color 0.3s ease-in-out;
@@ -324,6 +334,10 @@ a {
   float: left;
   padding: 0; 
   text-align: center;
+}
+
+#stylenav .nav-item {
+  width: 16.66%;
 }
 
 #cartnav {
@@ -361,15 +375,6 @@ a {
   width: auto;
   text-decoration: none;
 }
-
-/*#stylenav .topnav .nav-item {
-  display: inline-block;
-  font-family: 'Oswald', sans-serif;
-  font-size: 1.4rem;
-  width: 13%;
-  padding: 1.0rem 0;
-}
-*/
 
 #guide-nav ul {
   display: inline-block;
@@ -526,7 +531,7 @@ figcaption .item-name a:hover {
     font-size: 0.8rem;
   }
 
-  .topnav, #footer {
+  .topnav, #footer, #stylenav {
     padding-left: 0
   }
 
@@ -534,6 +539,10 @@ figcaption .item-name a:hover {
     font-size: 1.0rem;
     width: 100%;
     line-height: 0.8rem;
+  }
+
+  #stylenav .topnav .nav-item {
+width: 100%;
   }
 
   #content, #game-content {
@@ -599,10 +608,6 @@ figcaption .item-name a:hover {
     display: none;
     width: 0%;
     }
-
-  #stylenav .topnav .nav-item {
-    width: 18%;
-  }
 }
 
 @media screen and (max-width: 800px) {
