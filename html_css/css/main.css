@@ -81,7 +81,9 @@ section h1 {
 }
 
 section h2 {
-  font-size: 1.45rem;
+  font-family: "Abel", sans-serif;
+  font-size: 1.35rem;
+  font-weight: normal;
   margin: 0;
 }
 
@@ -90,9 +92,8 @@ h2s {
 }
 
 section h3 {
-  font-size: 90%;
   font-weight: normal;
-  margin-bottom: 0.5em;
+  margin: 0;
 }
 
 section h4 {
