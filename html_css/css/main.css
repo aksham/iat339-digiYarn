@@ -100,12 +100,6 @@ section h3 {
   margin: 0;
 }
 
-section h4 {
-  font-family: "Oswald", sans-serif;
-  font-size: 1.4rem;
-  margin: 0.4rem 0;
-}
-
 section h1 b, section h2 b, section h3 b, section h4 b {
   font-family: "Lato";
   font-size: 1.0rem;
