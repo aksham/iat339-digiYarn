@@ -68,6 +68,10 @@ ul {
   text-decoration: none;
 }
 
+.droplist {
+  list-style: disc;
+}
+
 section {
   margin: 0.2rem 0;
   padding: 0.2rem 0;
@@ -87,16 +91,8 @@ section h2 {
   margin: 0;
 }
 
-section h2.orange {
-  color: rgba(255, 110, 0, 1.0);
-}
-
 section .newstitle {
   text-decoration: none;
-}
-
-h2s {
-  margin: 2.0rem;
 }
 
 section h3 {
