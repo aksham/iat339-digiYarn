@@ -14,7 +14,7 @@
     <img src="img/banners/nav/merch_banner.jpg">
   </div>
 
-  <nav id ="topnav">
+  <nav class="topnav">
     <div class="nav-item"><a href="index.html">HOME</a></div>
     <div class="nav-item"><a href="news.html">NEWS</a></div>
     <div class="nav-item"><a href="games.html">GAMES</a></div>
@@ -24,50 +24,56 @@
 </header>
 <body>
   <section id="content">
-    <div class="grid-50">
-      <h1>CHECKOUT <b>Your Order</b></h1>
-      <div class="grid-50">
-        <div class="grid-col-1">
-          <img src="img/merch/merch-brhero-tee-small.png">
+    <nav id ="cartnav">
+      <div class="nav-item"><a href="checkout.html" class="cartnav">CHECKOUT</a></div>
+      <div class="nav-item"><a href="cart.html" class="cartnav">VIEW CART</a></div>
+    </nav>
+    <div class="container">
+      <h1>CHECKOUT</h1>
+      <hr>
+      <h2>Your Order:</h2>
+      <hr>
+      <div class="grid-col-1">
+        <img src="img/merch/merch-brhero-tee-small.png">
+      </div>
+      <div class="grid-col-2">
+        <h2>BOLT RUNNER Grey T-shirt</h2>
+        <p>Quantity: 1</p>
+        <p>$39.99</p>
+      </div>
+      <div class="grid-col-2 right-field">
+        <h2>Register</h2>
+        <div class="input-wrapper">
+          <input type="text" class="form-name" placeholder="Username or email">
         </div>
-        <div class="grid-col-2">
-          <h2>BOLT RUNNER Grey T-shirt</h2>
-          <h3>Quantity: 1 / $39.99</h3>
+        <div class="input-wrapper">
+          <input type="password" class="form-password" placeholder="Password"><br>
         </div>
-        <div class="grid-col-2">
-          <h2>Login or Register</h2>
-          <div class="input-wrapper">
-            <input type="text" class="form-name" placeholder="Username or email">
-          </div>
-          <div class="input-wrapper">
-            <input type="password" class="form-password" placeholder="Password"><br>
-          </div>
-          <div class="input-wrapper"> 
-            <input type="password" class="form-password aau" placeholder="Confirm Password"><br><br>
-            <a href="#">Already a member? Log in here.</a>
-          </div>
-        </div>
-        <div class="grid-col-5">
-          <hr>
-        </div>
-        <div class="grid-col-3">
-          <h1></h1>
-        </div>
-        <div class="grid-col-2">
-          <a class="btn submit" href="#">Submit</a>
+        <div class="input-wrapper"> 
+          <input type="password" class="form-password aau" placeholder="Confirm Password"><br>
+          <a href="#">Already a member? Log in here.</a><br>
+          <a class="btn submit" href="#">Sign up</a>
         </div>
       </div>
-    </section>
-    <section>
-      <nav id="footer">
-        <div class="meta">
-          <div><a class="footer-link" href="">About</a></div>
-          <div><a class="footer-link" href="">Jobs</a></div>
-          <div><a class="footer-link" href="">Privacy Policy</a></div>
-          <div><a class="footer-link" href="">Advertise</a></div>
-          <div><span class="footer-link">© 2015 Digital Yarn</span></div>
-        </div>
-      </nav>
-    </section>
-  </body>
-  </html>
+      <div class="grid-col-5">
+        <hr>
+      </div>
+      <div class="btn-right">
+        <a class="btn submit" href="purchased.html">Submit</a>
+        <a class="btn cancel" href="cart.html">Back to Cart</a>
+      </div>
+    </div>
+  </section>
+  <section>
+    <nav id="footer">
+      <div class="meta">
+        <div><a class="footer-link" href="">About</a></div>
+        <div><a class="footer-link" href="">Jobs</a></div>
+        <div><a class="footer-link" href="">Privacy Policy</a></div>
+        <div><a class="footer-link" href="">Advertise</a></div>
+        <div><span class="footer-link">© 2015 Digital Yarn</span></div>
+      </div>
+    </nav>
+  </section>
+</body>
+</html>

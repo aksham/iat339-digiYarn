@@ -130,7 +130,7 @@ section .tag {
 }
 
 b.archive a{
-  float:right;
+  float: right;
   font-size: 120%;
 }
 
@@ -201,11 +201,16 @@ section a:hover, nav ul li a:hover {
 a.btn {
   display: inline-block;
   padding: 1.0rem;
+  margin: 0.4rem;
   border-radius: 0.25em;
   text-decoration: none;
   -webkit-transition: background-color 0.3s ease-out;
   transition: color 0.4s ease-out;
   transition: background-color 0.35s ease-out;
+}
+
+.btn-right {
+  float: right;
 }
 
 a.submit {
@@ -484,10 +489,14 @@ figcaption .item-name a:hover {
 
 .product-desc {
   padding-left: 4.0rem;
-  } /**/
+  }
+
 
   /*checkout cart*/
-
+.right-field {
+  border-left: 0.12rem solid rgba(30, 35, 35, 0.2);
+  padding-left: 2.0rem;
+}
   /* index-layout:re */
   .container .featured-item {
     margin-right: 1.0rem;
@@ -555,7 +564,18 @@ figcaption .item-name a:hover {
   }
 
   .container {
-    padding: 1.0rem 2.0rem;
+    padding: 1.0rem;
+  }
+
+  .right-field {
+    border-left: none;
+    border-top:   0.12rem solid rgba(30, 35, 35, 0.2);
+    padding-left: 0;
+    padding-top: 1.0rem;
+  }
+
+  a.btn {
+   margin: 0.3rem;
   }
 
   #content, #game-content {
