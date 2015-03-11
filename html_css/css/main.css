@@ -426,6 +426,11 @@ nav ul li a {
   background-color: rgba(135, 135, 135, 1.0);
 }
 
+.colorbg {
+  background-color: rgba(235, 235, 235, 1.0);
+  color: rgba(30, 35, 35, 1.0);
+}
+
 .colororange {
   background-color: rgba(255, 110, 0, 1.0);
 }
