@@ -6,13 +6,18 @@
 
 body {
   font-family: 'Lato', sans-serif;
-  background-color: rgba(255, 255, 254, 1.0);
+  background-color: rgba(235, 235, 235, 1.0);
   color: rgba(30, 35, 35, 1.0);
   padding: 0;
   margin: auto;
   line-height: 1.5rem;
 }
 
+hr {
+  color: rgba(30, 35, 35, 0.2);
+  background-color: (30, 35, 35, 0.2);
+  margin: 1.0rem;
+}
 
 .products figcaption {
   text-align: center;
@@ -37,14 +42,13 @@ header img {
 
 #content {
   margin: 0 15%;
-  border: 0;
 }
 
 #game-content {
+    margin: 0 15%;
     padding: 0;
     border: 0;
     text-align: center;
-    margin-top: 2em;
   }
 
 #game-content p {
@@ -52,9 +56,8 @@ header img {
 }
 
 .banner {
-  width: 60%;
-  margin-top: 2em;
-  line-height: 0;
+  width: auto;
+  margin-top: 1.0rem;
 }
 
 img {
@@ -80,13 +83,14 @@ section {
 
 section h1 {
   font-weight: bold;
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
   font-size: 1.8rem;
-  margin: 1em 0;
+  margin: 0;
 }
 
 section h2 {
   font-size: 1.45rem;
+  margin: 0;
 }
 
 h2s {
@@ -99,7 +103,13 @@ section h3 {
   margin-bottom: 0.5em;
 }
 
-section h1 b, section h2 b, section h3 b {
+section h4 {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.4rem;
+  margin: 0.4rem 0;
+}
+
+section h1 b, section h2 b, section h3 b, section h4 b {
   font-family: "Lato";
   font-size: 1.0rem;
   font-weight: normal;
@@ -111,6 +121,17 @@ section code {
   display: inline-block;
   background-color: rgba(230, 230, 230, 1.0);
   padding: 0.5em 0.75em;
+}
+
+section .tag {
+  display: inline-block;
+  background-color: rgba(30, 30, 35, 1.0);
+  border: 0.16rem solid;
+  border-radius: 0.25rem;
+  color: rgba(255, 255, 255, 1.0);
+  padding: 0.3rem 0.6rem;
+  margin: 0.2rem 0;
+  font-size: 0.7rem;
 }
 
 b.archive a{
@@ -125,6 +146,7 @@ b.archive a{
 
 .grid-col-2 {
   width: 40%;
+  margin: 0;
 }
 
 .grid-col-3 {
@@ -140,18 +162,26 @@ b.archive a{
 }
 
 [class^=grid-col-] {
+  padding: 0;
   display: inline-block;
-  float:left;
+  float: left;
 }
 
 [class^=grid-col-] p {
-  padding: 0 1.0rem;
+  padding: 0.5rem;
   margin: 0;
 }
 
-.grid-50:after, .grid-25:after {
-  display:block;
+.container {
+  background-color: rgba(255, 255, 255, 1.0);
+  margin: 1.0rem 0;
+  padding: 1.6rem;
+  box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.2);
+}
+
+.container:after, .topnav:after {
   content:"";
+  display:block;
   clear: both;
 }
 
@@ -178,14 +208,13 @@ a.btn {
   padding: 1.0rem;
   border-radius: 0.25em;
   text-decoration: none;
-  color: rgba(255, 255, 255, 1.0);
-  -webkit-transition: background-color 0.5s ease-out;
-  transition: color 0.5s ease-out;
-  transition: background-color 0.5s ease-out;
-
+  -webkit-transition: background-color 0.3s ease-out;
+  transition: color 0.4s ease-out;
+  transition: background-color 0.35s ease-out;
 }
 
 a.submit {
+  color: rgba(255, 255, 255, 1.0);
   background-color: rgba(50, 169, 247, 1.0);
 }
 
@@ -204,10 +233,12 @@ a.cancel:hover {
 }
 
 a.submit2 {
+  color: rgba(255, 255, 255, 1.0);
   background-color: rgba(76, 216, 90, 1.0);
 }
 
 a.remove {
+  color: rgba(255, 255, 255, 1.0);
   background-color: rgba(200, 40, 40, 1.0);
 }
 
@@ -216,21 +247,70 @@ a.remove:hover {
   color: rgba(200, 40, 40, 1.0);
 }
 
-/* Navigation */
-#topnav {
+a.cartnav {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.3rem;
+  color: rgba(76, 216, 90, 1.0);
+  background-color: transparent;
+  border: 0.25em;
+  border: 0.2rem solid rgba(76, 216, 90, 1.0);
+  padding: 0.4rem 1.0rem;
+}
+
+a.cartnav:hover {
+  color: rgba(255, 255, 255, 1.0);
+  background-color: rgba(76, 216, 90, 1.0);
+}
+
+/* Top Navigation */
+.topnav {
   margin: 0 15%;
-  padding: 0;
   background-color: rgba(60, 60, 60, 1.0);
+  box-shadow: 0px 6px 5px -3px rgba(0, 0, 0, 0.2); 
+}
+
+.topnav .nav-item a{
+  display: inline-block;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.4rem;
+  color: rgba(255, 255, 255, 1.0);
+  text-decoration: none;
+  width: 100%;
+  padding: 1.0rem 0;
+    
+  transition: color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;  
+}
+
+.topnav .nav-item a:hover {
+  color: rgba(255, 110, 0, 1.0);
+  border-bottom: rgba(255, 110, 0, 1.0);
+}
+
+.topnav .selected a{
+  color: rgba(255, 255, 255, 1.0);
+  background-color: rgba(255, 110, 0, 1.0);
+}
+
+.topnav .selected a:hover {
+  color: rgba(255, 255, 255, 1.0);
+}
+
+.nav-item {
+  width: 20%;
+
+  float: left;
+  padding: 0; 
+  text-align: center;
+}
+
+#footer {
+  text-align: center;
 }
 
 #cartnav {
   margin: 0 15%;
-  padding: 0;
-  background-color: rgba(140, 140, 140, 1.0);
-}
-
-#topnav, #footer {
-  text-align: center;
+  padding: 0.3rem 0 0 0 ;
 }
 
 #cartnav {
@@ -263,44 +343,19 @@ a.remove:hover {
   text-decoration: none;
 }
 
-#topnav .nav-item {
-  display: inline-block;
-  font-family: 'Oswald', sans-serif;
-  font-size: 1.4rem;
-  width: 18%;
-  padding: 1.0rem 0;
-}
-
-#stylenav #topnav .nav-item {
+/*#stylenav .topnav .nav-item {
   display: inline-block;
   font-family: 'Oswald', sans-serif;
   font-size: 1.4rem;
   width: 13%;
   padding: 1.0rem 0;
 }
-
-#topnav .nav-item:hover, #cartnav .nav-item:hover {
-  color: rgba(255, 110, 0, 1.0);
-}
+*/
 
 #guide-nav ul {
   display: inline-block;
   margin: auto;
   width: auto;
-}
-
-#topnav div.selected a {
-  color: rgb(255,110,0);
-} 
-
-#topnav a, #cartnav a, #cartnav .nav-item {
-  color: rgba(255, 255, 255, 1.0);
-  transition: color 0.2s ease-in-out;
-  text-decoration: none;
-}
-
-#topnav a:hover, #cartnav a:hover {
-  color: rgba(255, 110, 0, 1.0);
 }
 
 nav ul li a {
@@ -381,45 +436,56 @@ input.form-search {
 
 /* merch test */
 
-[class^=grid-col-] figure{
-  background-color: rgba(255, 255, 255, 1.0);
+[class^=grid-col-] figure {
+  width: 100%;
+  height: 4.0rem;
+}
+
+[class^=grid-col-] figure img{
   text-align: center;
 }
 
-[class^=grid-col-] figure figcaption {
+
+
+[class^=grid-col-] figcaption {
   color: rgba(255, 255, 255, 1.0);
   background-color: rgba(35, 35, 35, 1.0);
   padding: 0.2rem;
+  height: 4.0rem;
 }
 
-[class^=grid-col-] figure figcaption a{
+[class^=grid-col-] figcaption a {
     color: rgba(255, 255, 255, 1.0);
     text-decoration: none;
 }
 
-[class^=grid-col-] figure figcaption a:hover{
+[class^=grid-col-] figcaption a:hover {
     color: rgba(255, 110, 0, 1.0);
 }
 
-.grid-50 .products {
-    background-color: rgba(235, 235, 235, 1.0);
-  }
+.container .products [class^=grid-col-] {
+  border: 0.2rem solid rgba(235, 235, 235, 1.0);
+}
 
-  .product-desc {
-    padding-left: 4.0rem;
-  }
+.item-name a {
+}
+
+.product-desc {
+  padding-left: 4.0rem;
+}
 
 /*checkout cart*/
 
 /* index-layout:re */
-
-.grid-50 .featured-item {
-  background-color: rgba(235, 235, 235, 1.0);
-  padding: 1.0rem;
+.container .featured-item {
+  margin-right: 1.0rem;
+}
+.container .featured-item img {
+    background-color: rgba(255, 255, 255, 1.0);
 }
 
 .h2p {
-  padding: 0 0 0 3.0rem;
+  padding: 0 0 0 5%;
 }
 
 /*============================================================*/
@@ -431,11 +497,11 @@ input.form-search {
     font-size: 0.8rem;
   }
 
-  #topnav, #footer {
+  .topnav, #footer {
     padding-left: 0
   }
 
-  #topnav .nav-item, #footer .footer-link {
+  .topnav .nav-item, #footer .footer-link {
     font-size: 1.0rem;
     width: 100%;
     line-height: 0.8rem;
@@ -456,14 +522,14 @@ input.form-search {
     width: 100%;
   }
 
-  #game-content .grid-50 {
+  #game-content .container {
   margin: 0;
   padding: 0;
   }
 }
 
 @media screen and (max-width: 600px) {
-#stylenav #topnav, #topnav, #cartnav, #footer, header img {
+#stylenav .topnav, .topnav, #cartnav, #footer, header img {
     padding: 0;
     margin: 0;
   }
@@ -482,7 +548,7 @@ input.form-search {
     width: 0%;
   }
 
-  #stylenav #topnav .nav-item {
+  #stylenav .topnav .nav-item {
     width: 18%;
   }
 }
@@ -493,7 +559,7 @@ input.form-search {
     padding: 0 9%;
   }
 
-  #stylenav #topnav, #topnav, #cartnav, #footer, header img {
+  #stylenav .topnav, .topnav, #cartnav, #footer, header img {
     padding: 0;
     margin: 0;
   }
@@ -505,7 +571,7 @@ input.form-search {
     padding: 0 5%;
     margin: 0;
   }
-  #stylenav #topnav, #topnav, #cartnav, #footer, header img {
+  #stylenav .topnav, .topnav, #cartnav, #footer, header img {
     padding: 0;
     margin: 0;
   }
@@ -517,7 +583,7 @@ input.form-search {
     margin: 0;
   }
 
-  #stylenav, #topnav, #cartnav {
+  #stylenav, .topnav, #cartnav {
     margin: 0 5%;
   }
 }*/
@@ -548,13 +614,13 @@ input.form-search {
     line-height: 2.0rem;
   }
 
-  #stylenav #topnav, #topnav, #cartnav, header img, header img.home{
+  #stylenav .topnav, .topnav, #cartnav, header img, header img.home{
     padding: 0;
     width: 30%;
     margin: 0;
   }
 
-  #topnav .nav-item {
+  .topnav .nav-item {
     padding: 1.0rem 0;
     margin: 0;
     width: 100%;
