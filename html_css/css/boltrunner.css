@@ -5,15 +5,20 @@ body {
 	color: #fff;
 }
 
-#topnav {
-	background: transparent;
+hr {
+	visibility: hidden;
 }
 
-#topnav a{
+.topnav, .topnav .selected a{
+	background: transparent;
+	box-shadow: none;
+}
+
+.topnav .nav-item a{
 	color: rgba(136, 147, 149, 0.7);
 }
 
-#topnav div.selected a, #topnav a:hover {
+.topnav .selected a, .topnav .nav-item a:hover {
 	color: rgba(255, 255, 255, 1.0);
 }
 
@@ -26,10 +31,38 @@ section h1 {
 	line-height: 4.2rem;
 }
 
-.grid-50 {
-	padding-bottom: 7.0rem;
+.container {
+	padding-bottom: 4.0rem;
 }
 
-.grid-50 figure {
+.container figure, .container {
 	background: transparent;
+	padding: 0;
+	box-shadow: none;
+}
+
+.grid-col-1 {
+	width: 19%;
+	height: 22rem;
+
+}
+
+.grid-col-1, .grid-col-2 {
+	margin: 0.5%;
+}
+
+@media screen and (max-width: 900px) {
+	.grid-col-1 {
+		display: block;
+		width: 100%;
+		max-height: auto;
+	}
+}
+
+@media screen and (min-width: 901px) and (max-width: 1550px) {
+	.grid-col-1 {
+		display: inline-block;
+		width: 49%;
+	}
+}
 }

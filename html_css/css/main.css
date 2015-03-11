@@ -186,9 +186,11 @@ section a {
   color: rgba(255, 110, 0, 1.0);
 }
 
-section a:hover, nav ul li a:hover {
+a:hover, nav ul li a:hover {
   color: rgba(30, 35, 35, 1.0);
   transition: color 0.2s ease-in-out;
+  -moz-transition: color 0.2s ease-in-out;;
+  -webkit-transition: color 0.2s ease-in-out;;
 }
 
 /* buttons */
@@ -204,9 +206,14 @@ a.btn {
   margin: 0.4rem;
   border-radius: 0.25em;
   text-decoration: none;
-  -webkit-transition: background-color 0.3s ease-out;
-  transition: color 0.4s ease-out;
-  transition: background-color 0.35s ease-out;
+  transition: color 0.4s ease-in-out;
+  -moz-webkit-transition: color 0.4s ease-in-out;
+  -webkit-transition: color 0.4s ease-in-out;
+  
+  transition: background-color 0.35s ease-in-out;
+  -moz-webkit-transition: background-color 0.35s ease-in-out;
+  -webkit-transition: background-color 0.35s ease-in-out;
+
 }
 
 .btn-right {
@@ -257,7 +264,6 @@ a.cartnav {
   border: 0.1rem solid rgba(255, 255, 255, 1.0);
   padding: 0.2rem 0.7rem;
   text-decoration: none;
-
   -webkit-transition: background-color 0.3s ease-out;
   transition: color 0.4s ease-out;
   transition: background-color 0.35s ease-out;
@@ -276,7 +282,7 @@ a.cartnav:hover {
   box-shadow: 0px 6px 5px -3px rgba(0, 0, 0, 0.2); 
 }
 
-.topnav .nav-item a{
+.topnav .nav-item a {
   display: inline-block;
   font-family: 'Oswald', sans-serif;
   font-size: 1.4rem;
@@ -284,9 +290,14 @@ a.cartnav:hover {
   text-decoration: none;
   width: 100%;
   padding: 1.0rem 0;
-
-  transition: color 0.2s ease-in-out;
-  transition: background-color 0.2s ease-in-out;  
+}
+a {
+  transition: color 0.3s ease-in-out;
+  -moz-transition: color 0.3s ease-in-out;
+  -webkit-transition: color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+  -moz-transition: background-color 0.3s ease-in-out;
+  -webkit-transition: background-color 0.3s ease-in-out;
 }
 
 .topnav .nav-item a:hover {
@@ -506,10 +517,6 @@ figcaption .item-name a:hover {
     background-color: rgba(255, 255, 255, 1.0);
   }
 
-  .h2p {
-    padding: 0 0 0 5%;
-  }
-
   /*============================================================*/
   /*Responsive adjustments*/
 
@@ -603,6 +610,11 @@ figcaption .item-name a:hover {
     margin: 0;
     padding: 0 9%;
   }
+[class^=grid-col-] {
+  display: block;
+  width: 100%;
+  }
+
 
   #stylenav .topnav, .topnav, #footer, header img {
     padding: 0;
