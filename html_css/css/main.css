@@ -293,7 +293,7 @@ a.cartnav:hover {
   color: rgba(255, 255, 255, 1.0);
   text-decoration: none;
   width: 100%;
-  padding: 1.0rem 0;
+  padding: 0.7rem 0;
 }
 
 #stylenav .topnav .nav-item a{
