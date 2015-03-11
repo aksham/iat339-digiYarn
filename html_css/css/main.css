@@ -347,10 +347,6 @@ a {
   padding: 0.2rem;
 }
 
-#footer {
-  text-align: center;
-}
-
 #footer .meta {
   text-align: center;
   margin: 0;
@@ -360,9 +356,9 @@ a {
 #footer .meta .footer-link{
   font-size: 0.7rem;
   display: inline-block;
-  padding: 0 1.0rem;
+  padding: 1.0rem;
   float: left;
-  width: 20%;
+  width: auto;
   text-decoration: none;
 }
 
@@ -617,6 +613,18 @@ figcaption .item-name a:hover {
 [class^=grid-col-] {
   display: block;
   width: 100%;
+  }
+
+  #footer .meta .footer-link{
+    display:block;
+    width: 98%;
+    margin: 1%;
+    padding: 0.4rem;
+  }
+
+  .footer-link {
+    border-radius: 0.25rem;
+    border: 1px solid rgba(135, 135, 135, 1.0);
   }
 
 

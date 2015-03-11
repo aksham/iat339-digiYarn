@@ -14,11 +14,11 @@ hr {
 	box-shadow: none;
 }
 
-.topnav .nav-item a{
+.topnav .nav-item a, #footer a, .btn-right a {
 	color: rgba(136, 147, 149, 0.7);
 }
 
-.topnav .selected a, .topnav .nav-item a:hover {
+.topnav .selected a, .topnav .nav-item a:hover, #footer a:hover, .btn-right a:hover {
 	color: rgba(255, 255, 255, 1.0);
 }
 
@@ -64,5 +64,4 @@ section h1 {
 		display: inline-block;
 		width: 49%;
 	}
-}
 }
