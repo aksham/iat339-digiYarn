@@ -248,13 +248,19 @@ a.remove:hover {
 }
 
 a.cartnav {
+  display: inline-block;
   font-family: 'Oswald', sans-serif;
-  font-size: 1.3rem;
+  font-size: 1.0rem;
   color: rgba(76, 216, 90, 1.0);
   background-color: transparent;
-  border: 0.25em;
-  border: 0.2rem solid rgba(76, 216, 90, 1.0);
-  padding: 0.4rem 1.0rem;
+  border-radius: 0.25em;
+  border: 0.15rem solid rgba(76, 216, 90, 1.0);
+  padding: 0.2rem 0.7rem;
+  text-decoration: none;
+
+  -webkit-transition: background-color 0.3s ease-out;
+  transition: color 0.4s ease-out;
+  transition: background-color 0.35s ease-out;
 }
 
 a.cartnav:hover {
@@ -304,28 +310,29 @@ a.cartnav:hover {
   text-align: center;
 }
 
-#footer {
+#cartnav {
+  display: inline-block;
   text-align: center;
-}
-
-#cartnav {
-  margin: 0 15%;
-  padding: 0.3rem 0 0 0 ;
-}
-
-#cartnav {
-  text-align: right;
-  margin-top: 0.3rem;
+  margin: 0.3rem 0;
+  padding: 0.3rem;
+  width: 100%;
+  border-radius: 0.25rem;
+  background-color: rgba(60, 60, 60, 1.0);
 }
 
 #cartnav .nav-item {
-  display: inline-block;
-  padding: 0 0.3rem;
+  width: 4.9rem;
+  float: right;
+  margin: 0 0 0 1.0rem;
 }
 
-#cartnav .navitem img {
-  width: auto;
-  height: auto;
+#cartnav .nav-item a {
+  width: 100%;
+  padding: 0.2rem;
+}
+
+#footer {
+  text-align: center;
 }
 
 #footer .meta {
@@ -464,7 +471,8 @@ input.form-search {
 }
 
 .container .products [class^=grid-col-] {
-  border: 0.2rem solid rgba(235, 235, 235, 1.0);
+  border: 0.2rem solid rgba(135, 135, 135, 1.0);
+  margin: 0.2rem;
 }
 
 .item-name a {
