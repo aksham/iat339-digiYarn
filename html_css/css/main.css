@@ -87,6 +87,10 @@ section h2 {
   margin: 0;
 }
 
+section h2.about {
+  color: rgba(255, 110, 0, 1.0);
+}
+
 h2s {
   margin: 2.0rem;
 }
@@ -118,7 +122,7 @@ section code {
 
 section .tag {
   display: inline-block;
-  background-color: rgba(30, 30, 35, 1.0);
+  background-color: rgba(130, 130, 130, 1.0);
   border: 0.16rem solid;
   border-radius: 0.25rem;
   color: rgba(255, 255, 255, 1.0);
