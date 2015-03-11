@@ -193,6 +193,10 @@ a:hover, nav ul li a:hover {
   -webkit-transition: color 0.2s ease-in-out;;
 }
 
+section a.readmore {
+  color: rgba(50, 169, 247, 1.0);
+}
+
 /* buttons */
 
 #buttons li {
